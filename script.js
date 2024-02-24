@@ -28,14 +28,14 @@ $(document).ready(function () {
   });
 
   var typed = new Typed(".typing", {
-    strings: ["Lifeguard", "Athlete", "IB Student", "Martial Artist"],
+    strings: ["IB Student", "Athlete", "Lifeguard", "Martial Artist"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Lifeguard", "Athlete", "IB Student", "Martial Artist"],
+    strings: ["IB Student", "Athlete", "Lifeguard", "Martial Artist"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
