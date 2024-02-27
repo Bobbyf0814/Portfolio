@@ -529,15 +529,14 @@ section .title::after{
 }
 
 /* footer section styling */
-footer{
+footer {
     background: #111;
     color: #fff;
     font-size: 16px;
     padding: 20px 0;
+    display: flex;
 }
-footer p{
-    text-align: center;
-}
+
 footer p span{
     color: #bda800;
     font-weight: 500;
@@ -550,8 +549,6 @@ footer p a{
 footer p a:hover{
     color: #bda800;
 }
-
-
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -678,4 +675,16 @@ footer p a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+.ig {
+    width: 40px;
+    height: 40px;
+    margin-left: 340px;
+}
+
+.link {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
 }
