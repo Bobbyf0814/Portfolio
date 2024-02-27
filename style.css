@@ -1,4 +1,4 @@
-/*  import google fonts */
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -35,12 +35,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .accomplishments, .skills, .achievements, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.accomplishments .serv-content,
 .skills .skills-content,
+.achievements .teams-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -257,21 +258,21 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .teams{
+/* accomplishments section styling */
+.accomplishments, .achievements{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.accomplishments .title::before,
+.achievements .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.accomplishments .title::after,
+.achievements .title::after{
     background: #111;
     content: "what I've accomplished";
 }
-.services .serv-content .card{
+.accomplishments .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -280,24 +281,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.accomplishments .serv-content .card:hover{
     background: #bda800;
 }
-.services .serv-content .card .box{
+.accomplishments .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.accomplishments .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.accomplishments .serv-content .card i{
     font-size: 50px;
     color: #bda800;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.accomplishments .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.accomplishments .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -378,11 +379,11 @@ section .title::after{
     width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after{
+/* achievements section styling */
+.achievements .title::after{
     content: "what I've achieved";
 }
-.teams .carousel .card{
+.achievements .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -390,25 +391,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.achievements .carousel .card:hover{
     background: #bda800;
 }
-.teams .carousel .card .box{
+.achievements .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.achievements .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.achievements .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.achievements .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -416,7 +417,7 @@ section .title::after{
     border: 5px solid #bda800;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.achievements .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -502,54 +503,54 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+    border-color: #bda800;
 }
-.contact .right form .textarea textarea{
-  padding-top: 10px;
-  resize: none;
+.contact .right form .button{
+    height: 45px;
+    width: 100%;
+    background: #bda800;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
-.contact .right form .button-area{
-  display: flex;
-  align-items: center;
+.contact .right form .button:hover{
+    background: none;
+    border: 2px solid #bda800;
+    color: #bda800;
 }
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: #bda800;
-  border: 2px solid #bda800;
-  transition: all 0.3s ease;
-}
-.right form .button-area button:hover{
-  color: #bda800;
-  background: none;
-}
+
 /* footer section styling */
 footer{
     background: #111;
-    padding: 15px 23px;
     color: #fff;
+    font-size: 16px;
+    padding: 20px 0;
+}
+footer p{
     text-align: center;
 }
-footer span a{
+footer p span{
     color: #bda800;
-    text-decoration: none;
+    font-weight: 500;
 }
-footer span a:hover{
-    text-decoration: underline;
+footer p a{
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
+footer p a:hover{
+    color: #bda800;
+}
+
 
 
 /* responsive media query start */
